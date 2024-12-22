@@ -1,74 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <script src="https://cdn.jsdelivr.net/npm/brython@3.9.5/brython.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Interactive Gist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .gist-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #333;
+        }
+        /* Ensure the Gist iframe is responsive */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
-<body onload="brython()">
-    <script type="
-import art
-def whole():
-    print(art.logo)
-    print("welcome to a simple calculator\n")
-    num1 = int(input("Please enter the first number : "))
-    stop = True
-    while  stop:
-        num2 = int(input(f"Please enter the second number : "))
-        operation=str(input("Choose one of the operations :"
-                         "list of operations are :\n"
-                         "+\n"
-                         "-\n"
-                         "*\n"
-                         "/\n"
-                         f"You picked  : "))
-
-
-        def calculator(x,y):
-            def add(n1, n2):
-                return n1 + n2
-            def subtract(n1,n2):
-                return n1-n2
-            def multiply(n1,n2):
-                return n1*n2
-            def divide(n1,n2):
-                return n1/n2
-            if operation== '+':
-                return add(x,y)
-            elif operation== '-':
-                return subtract(x,y)
-            elif operation== '*':
-                return multiply(x,y)
-            elif operation== '/':
-                return divide(x,y)
-            else:
-                return "Invalid input"
-
-        result= calculator(num1,num2)
-        if result=="Invalid input":
-            print("Invalid input")
-        else:
-            print(f"The Result of {num1} {operation} {num2} = {result}")
-        choice = str(input(f"Type yes if would you like to continue using the current value {result} or  no if you want to strat a new calculation\n"
-                  f"Yes for continue with current value | No  for starting a new calculation : "))
-        if choice.lower()=='yes':
-            num1=result
-
-        elif choice.lower()=='no':
-            stop=False
-            print("\n" * 100)
-            whole()
-        else :
-            print("Invalid input")
-
-whole()
-
-">
-    # Your Python code goes here
-    from browser import document, alert
-
-    def run():
-        alert("Hello, I am running Python in the browser!")
-
-    document <= button(text="Click me!", onclick=run)
-    </script>
+<body>
+    <h1>Check Out My Gist!</h1>
+    <div class="gist-container">
+        <!-- Embed your GitHub Gist -->
+        <script src="https://gist.github.com/faisal-khrisan/63864ec46acae842921d670bd1363976.js"></script>
+    </div>
 </body>
 </html>
