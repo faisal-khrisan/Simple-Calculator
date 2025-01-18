@@ -1,5 +1,6 @@
 # Simple-Calculator
 This Python app implements a simple calculator that supports basic arithmetic operations: addition, subtraction, multiplication, and division. The program allows users to perform calculations in a loop, either continuing with the result of the previous calculation or starting a new calculation.
+To try it click here : https://www.pythonanywhere.com/gists/63864ec46acae842921d670bd1363976/Calculator.py/ipython/
 # Features:
 * Basic Operations: Supports addition, subtraction, multiplication, and division.
 
